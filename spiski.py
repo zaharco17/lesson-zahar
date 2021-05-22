@@ -1,13 +1,23 @@
-citys = {
-    'city': 'moscow',
-    'temper': 20,
-
-}
-citys['date'] = '27.05.2019'
-citys["temper"] -=5
-
-print(citys)
+'''
+Создайте словарь:
+{"city": "Москва", "temperature": "20"}
+Выведите на экран значение ключа city
+Уменьшите значение "temperature" на 5
+Выведите на экран весь словарь
+'''
+citys = {'city': 'moscow','temper': 20,}
 print(citys['city'])
+citys["temper"] -= 5
+print(citys)
+
+'''
+Проверьте, есть ли в словаре ключ country
+Выведите значение по-умолчанию "Россия" для ключа country
+Добавьте в словарь элемент date со значением "27.05.2019"
+Выведите на экран длину словаря
+'''
 print(citys.get('country'))
 print(citys.get('country','Россия'))
+# С помощью .get() задаю значение, которое мы получим, если ключа в словаре нет. 
+citys['date'] = '27.05.2019'
 print(len(citys))
